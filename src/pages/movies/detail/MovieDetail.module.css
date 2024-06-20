@@ -1,0 +1,30 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    gap: 1rem;
+    img {
+        width: 270px;
+    }
+}
+
+.movieInformation {
+    display: flex;
+    flex-direction: column;
+    gap: .3125rem;
+}
+
+.movieDescription{
+    text-align: justify;
+}
+
+@media(max-width:760px) {
+    .wrapper {
+        text-align: center;
+        justify-items: center;
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        img {
+            width: 80%;
+        }
+    }
+  }

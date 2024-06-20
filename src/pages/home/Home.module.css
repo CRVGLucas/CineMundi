@@ -1,0 +1,8 @@
+.wrapperMovieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+
