@@ -1,3 +1,21 @@
+:root {
+    --dark: #1C1C1C;
+    --yellow-light: #F9DBB3;
+    --white: #FFF;
+    --black: #000;
+}
+
+*{
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
 @media(max-width:760px) {
     * {
         font-size: 14px;

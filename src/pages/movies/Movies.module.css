@@ -1,0 +1,16 @@
+.wrapperMovies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+.carouselMoviesGroup{
+    display: flex;
+    flex-direction: column;
+    h1 {
+        color: white;
+    }
+}

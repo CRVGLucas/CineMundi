@@ -20,31 +20,32 @@ export function MovieDetail() {
 
     return (
         <section className={styles.wrapper}>
-            <img src={"https://image.tmdb.org/t/p/original/"+movie.poster_path} alt={movie.title} title={movie.title}/>
-            <div>
-                <h1>{movie.title}</h1>
-                { movie.tagline && <i>{movie.tagline}</i>}
-                <p className={styles.movieDescription}>{movie.overview}</p>
-                <Rating
-                    name="simple-controlled"
-                    value={movie.vote_average}
-                    readOnly 
-                />
-                <div className={styles.movieInformation}>
-                    <h2>Produção</h2>
-                    <small>Companhia: {movie.production_companies && movie.production_companies.map(company => {
-                        return company.name
-                    }).join(', ')}</small>
-                    <small>País: {movie.production_countries && movie.production_countries.map(country => {
-                        return country.name
-                    }).join(', ')}</small>
-                    <small>Gêneros: {
-                        movie.genres && movie.genres.map(genre => {
-                            return genre.name
-                        }).join(', ')
-                    }</small>
+            <div className={styles.movieContent}>
+                <img src={"https://image.tmdb.org/t/p/original/"+movie.poster_path} alt={movie.title} title={movie.title}/>
+                <div>
+                    <h1>{movie.title}</h1>
+                    { movie.tagline && <i>{movie.tagline}</i>}
+                    <p className={styles.movieDescription}>{movie.overview}</p>
+                    <Rating
+                        name="simple-controlled"
+                        value={movie.vote_average}
+                        readOnly 
+                    />
+                    <div className={styles.movieInformation}>
+                        <h2>Produção</h2>
+                        <small>Companhia: {movie.production_companies && movie.production_companies.map(company => {
+                            return company.name
+                        }).join(', ')}</small>
+                        <small>País: {movie.production_countries && movie.production_countries.map(country => {
+                            return country.name
+                        }).join(', ')}</small>
+                        <small>Gêneros: {
+                            movie.genres && movie.genres.map(genre => {
+                                return genre.name
+                            }).join(', ')
+                        }</small>
+                    </div>
                 </div>
-
             </div>
         </section>
     )

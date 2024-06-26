@@ -1,15 +1,41 @@
+.headerContainer{
+    background: var(--black)
+}
+
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 40vw;
+    height: 100%;
+    z-index: 50;
     padding: 1.5rem;
+
+
+    background: var(--dark);
+
     nav {
         padding: 2.5rem auto;
         list-style: none;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 1rem;
     }
+    input {
+        background: transparent;
+        border-radius: 15px;
+        border: 1px solid var(--black);
+        padding: 0.5rem;
+    }
+}
+
+.flexRowCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .buttonSearch{
@@ -20,3 +46,30 @@
     padding: auto 1rem;
     cursor: pointer;
 }
+
+.buttonOpenMenu {
+    background: var(--black);
+    color: var(--white);
+    border-radius: 5px;
+    border: none;
+    padding: auto 1rem;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+.buttonCloseMenu{
+    background: var(--background);
+    color: var(--black);
+    border-radius: 5px;
+    border: none;
+    padding: auto 1rem;
+    cursor: pointer;
+
+}
+
+@media(max-width:760px) {
+    .header {
+        width: 100%;
+    }
+  }

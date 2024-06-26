@@ -1,17 +1,9 @@
-:root {
-  --dark: #1C1C1C;
-  --yellow-light: #F9DBB3;
-  --white: #FFF;
-  --black: #000;
-}
-
 .mainWrapper {
-  min-height: 100vh;
+  height: 100%;
   max-width: 1120px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
-
 
 @media(max-width:760px) {
   .mainWrapper {
@@ -19,9 +11,4 @@
       margin: auto;
       padding: 0;
   }
-}
-.App {
-  text-align: center;
-  background: var(--black);
-  color: var(--white);
 }

@@ -1,0 +1,16 @@
+.carouselWrapper {
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+}
+.carousel {
+    cursor: grab;
+}    
+.carouselInner {
+    display: flex;
+}
+
+.carouselItem {
+    min-height: 200px;
+    padding: 1rem;
+}
